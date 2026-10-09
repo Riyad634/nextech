@@ -151,16 +151,19 @@ a {
   background-position: center;
   background-size: cover;
 }
+
 .hero .logo-icon {
   padding: 0;
   margin: 0;
 }
+
 .hero .logo-icon img {
   position: absolute;
   height: 510px;
   top: -105px;
   right: -445px;
 }
+
 /* .hero::before {
   content: "";
   position: absolute;
@@ -420,7 +423,7 @@ textarea {
 footer {
   border-top: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.16);
-  
+
 }
 
 footer .wrap {
@@ -432,54 +435,63 @@ footer .wrap {
 }
 
 footer .website img {
- width: 47px;
- object-fit:cover
-  footer p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 13px;
+  width: 47px;
+
+  object-fit:cover footer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
 }
-}
+
 footer .developer img {
- width: 47px;
- object-fit:cover
-  footer p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 13px;
+  width: 47px;
+
+  object-fit:cover footer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
 }
-}
+
 footer img {
- width: 47px;
- object-fit:cover
-  footer p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 13px;
+  width: 47px;
+
+  object-fit:cover footer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
 }
-}
-footer .website{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .developer{
+
+footer .website {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .developer img{
+  height: 90px;
+  width: 105px;
+}
 /* Responsive */
 @media (max-width: 900px) {
   .burger {
     display: flex;
   }
-.hero .logo-icon img {
-          position: absolute;
-        height: 380px;
-        top: -94px;
-        right: -245px;
-}
+
+  .hero .logo-icon img {
+    position: absolute;
+    height: 380px;
+    top: -94px;
+    right: -245px;
+  }
+
   .nav nav {
     display: none;
     position: absolute;
@@ -514,12 +526,13 @@ footer .developer{
 
 @media (max-width: 560px) {
   .hero .logo-icon img {
-  position: absolute;
-        height: 343px;
-        width: 281px;
-        top: -30px;
-        right: -93px;
-}
+    position: absolute;
+    height: 343px;
+    width: 281px;
+    top: -30px;
+    right: -93px;
+  }
+
   .grid,
   .steps,
   .why {
@@ -535,5 +548,111 @@ footer .developer{
   .term p {
     animation: none;
     opacity: 1;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrap {
+    width: min(1400px, 100% - 5rem);
+  }
+
+  .hero {
+    padding: 6rem 0;
+  }
+
+  .sec {
+    padding: 4.5rem 0;
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    width: calc(100% - 1.5rem);
+  }
+
+  .nav {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .sec {
+    padding: 2.5rem 0;
+  }
+
+  .hero-grid {
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+
+  .lead {
+    margin: 1rem 0 1.5rem;
+    font-size: 1rem;
+  }
+
+  .grid article {
+    padding: 1.25rem;
+  }
+
+  .steps {
+    gap: 1.25rem;
+  }
+
+  .why {
+    gap: 1.25rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  footer .wrap {
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer {
+    padding: 14px 12px;
+  }
+
+  footer .wrap {
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  footer .website,
+  footer .developer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .website img {
+    width: 26px;
+    height: 28px;
+  }
+
+  footer .developer img {
+    width: 50px;
+    height: 53px;
+  }
+
+  footer p {
+    font-size: 11px;
   }
 }
